@@ -20,7 +20,10 @@ html {
 }
 
 html .hero-image {
-  content: url("../images/potrait4xcs.png");
+  content: url("../images/ninh.jpg");
+}
+html .hero-image1 {
+  content: url("../images/ninhpro-1.png");
 }
 
 html[data-theme='dark'] {
@@ -32,7 +35,10 @@ html[data-theme='dark'] {
 }
 
 html[data-theme='dark'] .hero-image {
-  content: url("../images/potrait4xcds.png");
+  content: url("../images/ninh.jpg");
+}
+html[data-theme='dark'] .hero-image1 {
+  content: url("../images/ninhpro-1.png");
 }
 
 html[data-theme='dark'] #section2 .card {
