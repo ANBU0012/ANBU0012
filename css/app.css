@@ -20,7 +20,7 @@ html {
 }
 
 html .hero-image {
-  content: url("../images/ninh.jpg");
+  content: url("../images/NinhAvt.png");
 }
 html .hero-image1 {
   content: url("../images/ninhpro-1.png");
@@ -35,7 +35,7 @@ html[data-theme='dark'] {
 }
 
 html[data-theme='dark'] .hero-image {
-  content: url("../images/ninh.jpg");
+  content: url("../images/NinhAvt.png");
 }
 html[data-theme='dark'] .hero-image1 {
   content: url("../images/ninhpro-1.png");
