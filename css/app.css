@@ -26,7 +26,7 @@ html .hero-image1 {
   content: url("../images/ninhpro-1.png");
 }
 html .hero-image2 {
-  content: url("../images/python.png");
+  content: url("../images/python.jpg");
 }
 
 html[data-theme='dark'] {
@@ -42,6 +42,9 @@ html[data-theme='dark'] .hero-image {
 }
 html[data-theme='dark'] .hero-image1 {
   content: url("../images/ninhpro-1.png");
+}
+html[data-theme='dark'] .hero-image2 {
+  content: url("../images/python.jpg");
 }
 
 html[data-theme='dark'] #section2 .card {
