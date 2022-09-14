@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="ok.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+<!-- Customized Bootstrap Stylesheet -->
+
+<style>
+    body {
+        font-family: Arial;
+        margin: 0;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+    /* Position the image container (needed to position the left and right arrows) */
+    
+    .container {
+        position: relative;
+    }
+    /* Hide the images by default */
+    
+    .mySlides {
+        display: none;
+    }
+    /* Add a pointer when hovering over the thumbnail images */
+    
+    .cursor {
+        cursor: pointer;
+    }
+    /* Next & previous buttons */
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    /* Position the "next button" to the right */
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Number text (1/3 etc) */
+    
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+    /* Container for image text */
+    
+    .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+    }
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Six columns side by side */
+    
+    .column {
+        float: left;
+        width: 16.66%;
+    }
+    /* Add a transparency effect for thumnbail images */
+    
+    .demo {
+        opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center bg-light px-lg-5">
+            <div class="col-12 col-md-8">
+                <div class="d-flex justify-content-between">
+                    <div class="bg text-white text-center py-2" style="width: 100px; background-color: #1559ed;">Tin tức</div>
+                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3" style="width: calc(100% - 100px); padding-left: 90px;">
+                        <div class="text-truncate"><a class="text-secondary" href="">Đại hội XIV - Thanh niên làm theo lời bác</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="">Phát huy tinh thần vượt khó của thanh niên</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-right d-none d-md-block">
+                Thứ tư, Ngày 14 Tháng 9 năm 2022
+            </div>
+        </div>
+        <div class="row align-items-center py-2 px-lg-5">
+            <div class="col-lg-5">
+                <a href="" class="row">
+                    <img src="./img/daihoi.png" alt="" srcset="" class="nav-link nav-item col-lg-2">
+                    <h1 class="m-0 display-5 text-uppercase nav-link nav-item col-lg-10"><span class="text-primary">Thái </span>Nguyên</h1>
+                </a>
+            </div>
+            <div class="col-lg-7 text-center text-lg-right">
+                <img class="img-fluid" src="./img/banner.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-uppercase"><span class="text-primary">Thái </span>Nguyên</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0" style=" width: 100%; ">
+                    <a href="index.html " class=" nav-item nav-link text-uppercase col-lg-2 " ">Trang chủ</a>
+                    <a href=" category.html " class="nav-item nav-link text-uppercase ">Tin đại hội</a>
+                    <a href="single.html " class="nav-item nav-link text-uppercase ">Chương trình</a>
+                    <a href="single.html " class="nav-item nav-link text-uppercase ">Sơ đồ vị trí</a>
+                    <a href="single.html " class="nav-item nav-link text-uppercase ">Văn kiện đại hội</a>
+                    <a href="single.html " class="nav-item nav-link text-uppercase ">Hồ sơ đại biểu</a>
+                    <a href="single.html " class="nav-item nav-link text-uppercase ">Danh sách xếp phòng nghỉ</a>
+                    <a href="single.html " class="nav-item nav-link text-uppercase active ">Di tích</a>
+
+
+
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- start Content -->
+    <div class="container-fluid py-3 ">
+        <div class="container ">
+            <div class="mySlides ">
+                <div class="numbertext ">1 / 2</div>
+                <iframe width="100% " height="800px " src="https://momento360.com/e/u/02c949ff8b2242df8f01962ea11152c4?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium " frameborder="0 "></iframe>
+            </div>
+
+            <div class="mySlides ">
+                <div class="numbertext ">2 / 2</div>
+                <iframe width="100% " height="800px " src=" https://momento360.com/e/u/f1fa59fbc7994953b6c7c7b0ea6939e3?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium " frameborder="0 "></iframe>
+            </div>
+            <div class="mySlides ">
+                <div class="numbertext ">3 / 4</div>
+                <iframe width="100% " height="800px " src="https://momento360.com/e/u/30bc08e57b4942cd88944c85c1b8e44c?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium " frameborder="0 "></iframe>
+            </div>
+            <div class="mySlides ">
+                <div class="numbertext ">4 / 4</div>
+                <iframe width="100% " height="800px " src="https://momento360.com/e/u/bc547a1c70944d8db4fb5cedc605efa9?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium " frameborder="0 "></iframe>
+            </div>
+
+
+
+            <a class="prev " onclick="plusSlides(-1) ">❮</a>
+            <a class="next " onclick="plusSlides(1) ">❯</a>
+
+
+
+            <div class="row ">
+                <div class="column ">
+
+                    <img class="demo cursor " src="./img/1.jpeg " style="width:100% " onclick="currentSlide(1) " alt="Snowy Mountains ">
+
+
+                </div>
+                <div class="column ">
+
+                    <img class="demo cursor " src="./img/2.jpeg " style="width:100% " onclick="currentSlide(2) " alt="Snowy Mountains ">
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./img/3.jpeg " style="width:100% " onclick="currentSlide(3) " alt="Snowy Mountains ">
+
+                </div>
+                <div class="column ">
+                    <img class="demo cursor " src="./img/4.jpeg " style="width:100% " onclick="currentSlide(4) " alt="Snowy Mountains ">
+
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides ");
+                let dots = document.getElementsByClassName("demo ");
+                let captionText = document.getElementById("caption ");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none ";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active ", " ");
+                }
+                slides[slideIndex - 1].style.display = "block ";
+                dots[slideIndex - 1].className += " active ";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js "></script>
+        <script src="lib/easing/easing.min.js "></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js "></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js "></script>
+        <script src="mail/contact.js "></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js "></script>
+
+</body>
+
+</html>
