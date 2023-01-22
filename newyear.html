@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng năm mới</title>
+    <meta name="description" content="Chúc mừng năm mới N!">
+
+    <style>
+        #container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background: linear-gradient(to right, green, rgb(170, 87, 87), blue);
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .text-element {
+            position: absolute;
+            animation: slide-in-out 1s;
+            visibility: hidden;
+            opacity: 0;
+            font-size: 36px;
+            font-weight: bold;
+            color: gold;
+            text-shadow: 2px 2px 4px black;
+            animation: greeting 2s ease-in-out;
+        }
+        
+        @keyframes text-element {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes slide-in-out {
+            0% {
+                transform: translateX(-100%);
+                visibility: hidden;
+                opacity: 0;
+            }
+            10% {
+                transform: translateX(0);
+                visibility: visible;
+                opacity: 1;
+            }
+            90% {
+                transform: translateX(0);
+                visibility: visible;
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(100%);
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="bg-video"></div>
+    <div id="container">
+        <p class="text-element">Chúc mừng năm mới 2023</p>
+        <p class="text-element">Chúc N và gia đình</p>
+        <p class="text-element">Có nhiều sức khoẻ</p>
+        <p class="text-element">Luôn hạnh phúc và vui vẻ</p>
+        <p class="text-element">Vạn sự như ý</p>
+    </div>
+    <script>
+        const textElements = document.querySelectorAll('.text-element');
+        let currentText = 0;
+
+        setInterval(() => {
+            textElements[currentText].style.visibility = "hidden";
+            textElements[currentText].style.opacity = 0;
+            currentText = (currentText + 1) % textElements.length;
+            textElements[currentText].style.visibility = "visible";
+            textElements[currentText].style.opacity = 1;
+        }, 1000);
+    </script>
+</body>
+
+</html>
