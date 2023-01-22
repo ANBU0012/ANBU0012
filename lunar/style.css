@@ -5,10 +5,15 @@ body {
     text-align: center;
 }
 
+.text-element {
+    text-align: center;
+}
+
 table {
     padding-top: 80px;
     margin: auto;
     width: 30%;
+    border-collapse: collapse;
 }
 
 .pinyin {
